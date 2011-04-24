@@ -3,8 +3,9 @@
 <head>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
-	<link rel="stylesheet" type="text/css" href="main.css" />
-  <%= javascript_include_tag 'application.js' %>
+	<link rel="stylesheet" type="text/css" href="/main.css" />
+  <link rel="icon" type="image/png" href="/images/ms-32x32.png"/>
+  <script src="/main.js"></script>
   <title> Missing Ships <%= '- '+@page.to_s if @page && @page.to_s != 'index'
   %> </title>
 </head>
@@ -23,35 +24,31 @@
 	</ul>
 	<div id="content">
 		<div id="right">
-		<a href="http://www.facebook.com/MissingShips" title="Missing Ships"> <img src="images/fbbadge.png" /> </a> 
-		
-		<a href="http://www.youtube.com/MissingShips" title="Missing Ships"> <img src="images/Youtube_badge.png" /> </a> 
-		
-		<a href="http://www.myspace.com/missingships" title="Missing Ships"> <img src="images/MyspaceBadge50x50.png" /> </a> 
-		
-		
-<a href="http://www.twitter.com/MissingShipsNYC"><img src="images/twitter-50x50.png" alt="Follow MissingShipsNYC on Twitter"/></a>
-		<p>
-		Girls All Night Promo Video!
-		
-			<iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/dbvTayntLSU" frameborder="0" allowfullscreen></iframe>
-		
-			<p>
-			Girls All Night Vol. 1, Available Now!
-<a href="/music"><img src= images/GIRLSALLNIGHTVOLsmall.jpg /></a>
-			</p>
-
+      <p>
+        <a target="_blank" href="http://www.facebook.com/MissingShips"><img src="images/fbbadge.png" alt="Facebook"/></a> 
+        <a target="_blank" href="http://www.youtube.com/MissingShips"><img src="images/Youtube_badge.png" alt="YouTube"/></a> 
+        <a target="_blank" href="http://www.myspace.com/missingships"><img src="images/MyspaceBadge50x50.png" alt="MySpace"/></a> 
+        <a target="_blank" href="http://www.twitter.com/MissingShipsNYC"><img src="images/twitter-50x50.png" alt="Follow MissingShipsNYC on Twitter"/></a>
+      </p>
+      <p> 
+        Girls All Night Promo Video! <br/>
+			  <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/dbvTayntLSU" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p> 
+        Download Girls All Night Vol. 1 <br/>
+        <a href="/music"><img style="margin-top:10px" src="images/GIRLSALLNIGHTVOLsmall.jpg" /></a>
+      </p>
 		</div>
 
 		<div id="left">
 		  <div id="<%= @page || 'index' %>">
-		    <%= yield %><%# don't touch %>
+		    <%= yield %>
 		  </div>
 		</div>
 
 		<div class="clear"></div>
     <div id="copyright">
-      Copyright 2011 Missing Ships.
+      copyright 2011 Missing Ships
     </div>
 	</div>
 </body>
