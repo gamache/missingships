@@ -1,0 +1,116 @@
+html {
+	background-image: url('images/map.jpg');
+	background-position: center;
+	padding: 20px 40px 20px 40px;
+	font-size: 62.5%;
+}
+body {
+	text-align: center;
+	font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
+	font-size: 1.4em;
+	margin: 0px auto 0px auto;
+	
+	padding: 15px;
+	border:  thick solid black;
+	
+	background-color: #FCFEE7;  /* Neko Cream */
+	width: 960px;
+}
+
+h1,h2,h3,h4 { margin: 15px 0px 5px 0px; }
+h1 { font-weight: bold; font-size: 2em; }
+h2 { font-weight: bold; font-size: 1.8em; }
+h3 { font-weight: bold; font-size: 1.6em; }
+h4 { font-weight: bold; font-size: 1.4em; }
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+p {
+	margin: 10px 0px 20px 0px;
+}
+
+body.debug * { border: 1px solid red;}
+
+.clear {
+	clear: both;
+}
+
+#logo {
+	border: 15px auto 15px auto;
+}
+#content {
+	margin: 15px auto 15px auto;
+	text-align: left;
+}
+#right {
+	display: inline-block;
+	width: 240px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+	padding: 15px 15px 15px 20px;
+	
+	border-left: 1px dashed #000;	
+	position: relative;
+	left: -9px;
+	top: 1px;
+	
+	overflow-x: hidden;
+}
+#left {
+	float: left;
+	margin: 0px;
+	width: 645px;
+	padding: 15px;
+	margin: 0;
+	border-right: 1px dashed #000;
+
+	overflow-x: hidden;
+}
+
+iframe {
+	margin: 10px auto 15px auto;
+}
+#left iframe { 
+	display: block;
+	width: 640px !important;
+	height: 390px !important;
+}
+#right iframe {
+	display: block;
+	width: 255px !important;
+	height: 221px !important;
+}
+
+
+
+#nav {
+	display: block;
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+	font-size: 1.6em;
+}
+#nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px auto 0px auto;
+}
+#nav a {
+	padding: 5px 10px 5px 10px;
+}
+#nav a:hover {
+	background-color: #cc9999; 
+}
+
+#copyright {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 80%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+

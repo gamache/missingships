@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="main.css" />
+  <%= javascript_include_tag 'application.js' %>
+	<title> Missing Ships </title>
+</head>
+<body>
+  <a href="/">
+	<img id="logo" src="images/logo/missing-ships-desdemona-logo-black-900x119.gif" />
+  </a>
+	<ul id="nav">
+		<li><a href="about">ABOUT</a></li>
+		<li><a href="music">MUSIC</a></li>
+		<li><a href="pics">PICS</a></li>
+		<li><a href="live">LIVE</a></li>
+		<li><a href="contact">CONTACT</a></li>
+	</ul>
+	<div id="content">
+		<div id="right">
+		<a href="http://www.facebook.com/MissingShips" title="Missing Ships"> <img src="images/fbbadge.png" /> </a> 
+		
+		<a href="http://www.youtube.com/MissingShips" title="Missing Ships"> <img src="images/Youtube_badge.png" /> </a> 
+		
+		<a href="http://www.myspace.com/missingships" title="Missing Ships"> <img src="images/MyspaceBadge50x50.png" /> </a> 
+		
+		
+<a href="http://www.twitter.com/MissingShipsNYC"><img src="images/twitter-50x50.png" alt="Follow MissingShipsNYC on Twitter"/></a>
+		<p>
+		Girls All Night Promo Video!
+		
+			<iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/dbvTayntLSU" frameborder="0" allowfullscreen></iframe>
+		
+			<p>
+			Girls All Night Vol. 1, Available Now!
+<a href="/music"><img src= images/GIRLSALLNIGHTVOLsmall.jpg /></a>
+			</p>
+
+		</div>
+
+		<div id="left">
+		  <%= yield %><%# don't touch %>	
+		</div>
+
+		<div class="clear"></div>
+    <div id="copyright">
+      Copyright 2011 Missing Ships.
+    </div>
+	</div>
+</body>
+</html>
