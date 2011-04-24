@@ -1,7 +1,7 @@
 class PageController < ApplicationController
   def page
-    pg = params[:page] || 'index'
-    logger.debug pg
-    render :template => "page/#{pg.gsub(/\.html/,'')}"
+    @page = params[:page] || 'index'
+    @page.gsub!(/\.html/,'')
+    render :template => "page/#{@page}"
   end
 end

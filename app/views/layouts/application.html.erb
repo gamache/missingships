@@ -12,6 +12,7 @@
 	<img id="logo" src="images/logo/missing-ships-desdemona-logo-black-900x119.gif" />
   </a>
 	<ul id="nav">
+	  <li><a href="index">MAIN</a></li>
 		<li><a href="about">ABOUT</a></li>
 		<li><a href="music">MUSIC</a></li>
 		<li><a href="pics">PICS</a></li>
@@ -41,7 +42,9 @@
 		</div>
 
 		<div id="left">
-		  <%= yield %><%# don't touch %>	
+		  <div id="<%= @page || 'index' %>">
+		    <%= yield %><%# don't touch %>
+		  </div>
 		</div>
 
 		<div class="clear"></div>

@@ -1,1 +1,34 @@
-<script type="text/javascript" src="http://missingships.tumblr.com/js"></script>
+<script src="http://missingships.tumblr.com/api/read/json"></script>
+<script>
+$(document).ready(function(){
+  (function(tumblr_api_read){
+    function render_post(post) {
+      if (post == undefined) return null;
+      // text posts only for now
+      if (post.type != 'video') {
+        var html =
+          '<div class="tumblr_post" id="tumblr_post_' + post.id + '">' +
+          '  <div class="tumblr_title">' + post['regular-title'] + '</div>' +
+          '  <div class="tumblr_date">' + post['date'] + '</div>' +
+          '  <div class="tumblr_body">' + post['regular-body'] + '</div>' +
+          '</div>';
+        $('#index').append(html);
+      }
+    }
+
+    if (tumblr_api_read != undefined) {
+      var posts = tumblr_api_read.posts;
+      var nposts = posts.length;
+      for (var i=0; i<nposts; i++) {
+        render_post(posts[i]);
+      }
+    }
+    else {
+      $('#index').append('<p>'+
+        'Sorry, it looks like our Tumblr feed is down.  Try reloading the page.' + 
+        '</p>'
+      );
+    }
+  })(tumblr_api_read);
+});
+</script>
