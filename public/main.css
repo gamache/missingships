@@ -104,6 +104,7 @@ iframe {
 }
 #nav a {
 	padding: 5px 10px 5px 10px;
+  text-transform: uppercase;
 }
 #nav a:hover {
 	background-color: #cc9999; 
@@ -125,7 +126,6 @@ iframe {
 }
 
 
-/* tumblr shit */
 .tumblr_post {
   margin: 20px 0px 20px 0px;
   border-bottom: 1px dotted gray;
@@ -142,22 +142,3 @@ iframe {
 .tumblr_description {
 
 }
-.tumblr_body {  }
-
-.tumblr_quote_post {  }
-.tumblr_quote {  }
-.tumblr_open_quote {  }
-.tumblr_close_quote {  }
-.tumblr_source {  }
-.tumblr_photo_post {  }
-.tumblr_photo {  }
-.tumblr_caption {  }
-.tumblr_link_post {  }
-.tumblr_link {  }
-.tumblr_chat_post {  }
-.tumblr_label {  }
-.tumblr_text_post {  }
-.tumblr_video_post {  }
-.tumblr_video {  }
-.tumblr_audio_post {  }
-

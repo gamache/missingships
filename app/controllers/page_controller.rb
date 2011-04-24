@@ -1,7 +1,6 @@
 class PageController < ApplicationController
   def page
     @page = params[:page] || 'index'
-    @page.gsub!(/\.html/,'')
-    render :template => "page/#{@page}"
+    render :template => "page/#{@page}", :layout => !params[:partial]
   end
 end
