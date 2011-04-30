@@ -1,6 +1,6 @@
 html {
 	background-image: url('images/map.jpg');
-	background-position: center;
+	background-position: 50% -100px;
 	padding: 20px 40px 20px 40px;
 	font-size: 62.5%;
 }
@@ -102,6 +102,8 @@ iframe {
 	padding: 5px 10px 5px 10px;
   text-transform: uppercase;
 }
+#nav a.active:after  { zzzcontent: "."; }
+
 #nav a:hover {
 	background-color: #cc9999; 
 	text-decoration: none;
