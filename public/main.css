@@ -141,7 +141,10 @@ iframe {
 
 }
 
-
+.alert {
+  color: #711;
+  font-weight: bold;
+}
 #mailing-list label {
   width: 4em;
   display: inline-block;

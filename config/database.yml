@@ -21,6 +21,3 @@ production:
   username: missing_ships
   password: cumm_cravving_sluttz
 
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
