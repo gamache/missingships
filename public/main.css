@@ -140,3 +140,13 @@ iframe {
 .tumblr_description {
 
 }
+
+
+#mailing-list label {
+  width: 4em;
+  display: inline-block;
+}
+#mailing-list input[type=text] {
+  width: 15em;
+  margin-bottom: 5px;
+}

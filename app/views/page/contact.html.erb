@@ -1,5 +1,23 @@
 <img src="/images/mslion.jpg" style="float:left; margin-right: 10px" />
 
+<% if flash[:email_signup_message] %>
+  <h4 class="alert">
+    <%= flash[:email_signup_message] %>
+  </h4>
+<% end %>
+
+<p>
+  <b>Join the mailing list!</b>
+  <form action="/contact" method="post" id="mailing-list">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
+    <label>Email:</label>
+    <input type="text" name="email" placeholder="you@example.com" /><br/>
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Your Name" /></br/>
+    <input type="submit" name="Join" value="Join" />
+  </form>
+</p>
+
 <p>
   <b>Love Letters, Ransom Notes, Questions, Comments</b><br/>
   Missing Ships<br/>
