@@ -141,6 +141,10 @@ iframe {
 
 }
 
+.tumblr_post img {
+  margin: 0 10px 10px 0px;
+}
+
 .alert {
   color: #711;
   font-weight: bold;
