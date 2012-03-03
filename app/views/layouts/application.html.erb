@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
-	<link rel="stylesheet" type="text/css" href="/main.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" />
+  <link rel="stylesheet" type="text/css" href="/main.css" />
   <link rel="icon" type="image/png" href="/images/ms-32x32.png"/>
   <script src="/main.js"></script>
   <title> Missing Ships <%= '- '+@page.to_s if @page && @page.to_s != 'index'
@@ -27,7 +27,7 @@
     <img id="logo" width=900 height=119
     src="images/logo/missing-ships-desdemona-logo-black-900x119.gif" />
   </a>
-	<ul id="nav">
+  <ul id="nav">
 <%= raw( 
   { '/' => 'Main',
     '/about' => 'About',
@@ -43,9 +43,9 @@
     EOT
   }.join(" ")
 ) %>
-	</ul>
-	<div id="content">
-		<div id="right">
+  </ul>
+  <div id="content">
+    <div id="right">
       <p>
         <a target="_blank" href="http://www.facebook.com/MissingShips"><img src="images/fbbadge.png" alt="Facebook"/></a> 
         <a target="_blank" href="http://www.youtube.com/MissingShips"><img src="images/Youtube_badge.png" alt="YouTube"/></a> 
@@ -54,24 +54,24 @@
       </p>
       <p> 
         Girls All Night Promo Video! <br/>
-			  <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/dbvTayntLSU" frameborder="0" allowfullscreen></iframe>
+        <iframe title="YouTube video player" width="560" height="349" src="http://www.youtube.com/embed/dbvTayntLSU" frameborder="0" allowfullscreen></iframe>
       </p>
       <p> 
         Download Girls All Night Vol. 1 <br/>
         <a href="/music"><img style="margin-top:10px" src="images/GIRLSALLNIGHTVOLsmall.jpg" /></a>
       </p>
-		</div>
-
-		<div id="left">
-		  <div id="<%= @page || 'index' %>">
-		    <%= yield %>
-		  </div>
-		</div>
-
-		<div class="clear"></div>
-    <div id="copyright">
-      copyright 2011 Missing Ships
     </div>
-	</div>
+
+    <div id="left">
+      <div id="<%= @page || 'index' %>">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+    <div id="copyright">
+      copyright 2011-2012 Missing Ships
+    </div>
+  </div>
 </body>
 </html>
