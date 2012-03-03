@@ -9,10 +9,10 @@ body {
   font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
   font-size: 1.4em;
   margin: 0px auto 0px auto;
-  
+
   padding: 15px;
   border:  thick solid black;
-  
+
   background-color: #FCFEE7;  /* Neko Cream */
   width: 960px;
 }
@@ -57,10 +57,14 @@ body.debug * { border: 1px solid red;}
   float: right;
   margin: 0px 0px 0px 0px;
   padding: 15px 15px 15px 20px;
-  
-  border-left: 1px dashed #000;  
-  
+
+  border-left: 1px dashed #000;
+
   overflow-x: hidden;
+}
+#right .icons img {
+  width: 44px;
+  height: 44px;
 }
 #left {
   float: left;
@@ -75,7 +79,7 @@ body.debug * { border: 1px solid red;}
 iframe {
   margin: 10px auto 15px auto;
 }
-#left iframe { 
+#left iframe {
   display: block;
   width: 640px !important;
   height: 390px !important;
@@ -107,7 +111,7 @@ iframe {
 #nav a.active:after  { zzzcontent: "."; }
 
 #nav a:hover {
-  background-color: #cc9999; 
+  background-color: #cc9999;
   text-decoration: none;
 }
 
