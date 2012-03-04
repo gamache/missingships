@@ -1,27 +1,15 @@
 !!!
 %html
   %head
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"}
-    %link{:href => "http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/main.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/images/ms-32x32.png", :rel => "icon", :type => "image/png"}/
-    %script{:src => "/main.js"}
     %title
       Missing Ships #{'- '+@page.to_s if @page && @page.to_s != 'index'}
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-22933797-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    %link{:href => "/images/ms-32x32.png", :rel => "icon", :type => "image/png"}/
+    %link{:href => "http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/main.css", :rel => "stylesheet", :type => "text/css"}/
 
   %body
     %a{:href => "/"}
-      %img#logo{:height => "119", :src => "images/logo/missing-ships-desdemona-logo-black-900x119.gif", :width => "900"}/
+      %img#logo{:src => "images/logo/missing-ships-desdemona-logo-black-900x119.gif"}/
     %ul#nav
       = raw(navbar)
     #content
@@ -52,3 +40,16 @@
       .clear
       #copyright
         copyright 2011-2012 Missing Ships
+
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"}
+    %script(src='/main.js')
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22933797-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

@@ -46,6 +46,8 @@ body.debug * { border: 1px solid red;}
 
 #logo {
   border: 15px auto 15px auto;
+  height: 119px;
+  width: 900px;
 }
 #content {
   margin: 15px auto 15px auto;
