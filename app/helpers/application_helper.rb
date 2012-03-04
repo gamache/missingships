@@ -4,6 +4,7 @@ module ApplicationHelper
       '/bio' => 'Bio',
       '/audio' => 'Audio',
       '/pics' => 'Pics',
+      '/press' => 'Press',
       '/shows' => 'Shows',
       '/contact' => 'Contact'
     }.map{|url,name|

@@ -125,12 +125,14 @@ iframe {
   padding-top: 10px;
 }
 
-
 #contact .left {
     float: left;
     margin-right: 15px;
 }
 
+#press .item {
+  margin-bottom: 25px;
+}
 
 .tumblr_post {
   margin: 20px 0px 20px 0px;
