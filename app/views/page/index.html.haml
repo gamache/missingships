@@ -1,0 +1,28 @@
+%script{:src => "http://missingships.tumblr.com/api/read/json"}
+  \// this defines a very interesting object called 'tumblr_api_read'
+:javascript
+  $(document).ready(function(){
+    function render_post(post) {
+      if (post == undefined) return null;
+      // text posts only for now
+      if (post.type == 'regular') {
+        $('#index').append( // it's 2011 and JS still doesn't have heredocs
+  '<div class="tumblr_post" id="tumblr_post_' + post.id + '">' +
+  '  <div class="tumblr_title">' + post['regular-title'] + '</div>' +
+  '  <div class="tumblr_date">' + post['date'] + '</div>' +
+  '  <div class="tumblr_body">' + post['regular-body'] + '</div>' +
+  '  <div class="clear"></div>' +
+  '</div>');                // but at least it's still semicolon-terminated
+      }
+    }
+  
+    if (tumblr_api_read != undefined) {
+      var posts = tumblr_api_read.posts;
+      var nposts = posts.length;
+      for (var i=0; i<nposts; i++) render_post(posts[i]);
+    }
+    else {
+      $('#index').append('<p>Sorry, it looks like our Tumblr feed is down. ' +
+                         'Try reloading the page.</p>');
+    }
+  });

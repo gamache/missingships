@@ -1,0 +1,54 @@
+!!!
+%html
+  %head
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"}
+    %link{:href => "http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/main.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/images/ms-32x32.png", :rel => "icon", :type => "image/png"}/
+    %script{:src => "/main.js"}
+    %title
+      Missing Ships #{'- '+@page.to_s if @page && @page.to_s != 'index'}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-22933797-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+  %body
+    %a{:href => "/"}
+      %img#logo{:height => "119", :src => "images/logo/missing-ships-desdemona-logo-black-900x119.gif", :width => "900"}/
+    %ul#nav
+      = raw(navbar)
+    #content
+      #right
+        %p.icons
+          %a{:href => "http://www.facebook.com/MissingShips", :target => "_blank"}
+            %img{:alt => "Facebook", :src => "images/fbbadge.png"}/
+          %a{:href => "http://www.youtube.com/MissingShips", :target => "_blank"}
+            %img{:alt => "YouTube", :src => "images/Youtube_badge.png"}/
+          %a{:href => "http://www.myspace.com/missingships", :target => "_blank"}
+            %img{:alt => "MySpace", :src => "images/MyspaceBadge50x50.png"}/
+          %a{:href => "http://www.twitter.com/MissingShipsNYC", :target => "_blank"}
+            %img{:alt => "Follow MissingShipsNYC on Twitter", :src => "images/twitter-50x50.png"}/
+          %a{:href => "http://missingshipsmusic.bandcamp.com", :target => "_blank"}
+            %img{:alt => "Bandcamp", :src => "http://s0.bcbits.com/img/buttons/bandcamp_60x60_black.png"}/
+        %p
+          Girls All Night Promo Video!
+          %br/
+          %iframe{:allowfullscreen => "", :frameborder => "0", :height => "349", :src => "http://www.youtube.com/embed/dbvTayntLSU", :title => "YouTube video player", :width => "560"}
+        %p
+          Download Girls All Night Vol. 1
+          %br/
+          %a{:href => "/music"}
+            %img{:src => "images/GIRLSALLNIGHTVOLsmall.jpg", :style => "margin-top:10px"}/
+      #left
+        %div{:id => @page || 'index'}
+          = yield
+      .clear
+      #copyright
+        copyright 2011-2012 Missing Ships

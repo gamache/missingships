@@ -1,0 +1,28 @@
+%img{:src => "/images/mslion.jpg", :style => "float:left; margin-right: 10px"}/
+- if flash[:email_signup_message]
+  %p.alert
+    = flash[:email_signup_message]
+%p
+  %b Join the mailing list!
+  %form#mailing-list{:action => "/contact", :method => "post"}
+    %input{:name => "authenticity_token", :type => "hidden", :value => form_authenticity_token}/
+    %label Email:
+    %input{:name => "email", :placeholder => "you@example.com", :type => "text"}/
+    %br/
+    %label Name:
+    %input{:name => "name", :placeholder => "Your Name", :type => "text"}/
+    %input{:name => "Join", :type => "submit", :value => "Join"}/
+%p
+  %b Love Letters, Ransom Notes, Questions, Comments
+  %br/
+  Missing Ships
+  %br/
+  %a{:href => "mailto:info@missingships.com"} info@missingships.com
+%p
+  %b Booking, Interview Requests, Management Concerns
+  %br/
+  Meaghan Q. Sinclair
+  %br/
+  %a{:href => "http://meaghanq.com", :target => "_blank"} http://meaghanq.com
+  %br/
+  %a{:href => "mailto:meaghan@meaghanq.com"} meaghan@meaghanq.com
