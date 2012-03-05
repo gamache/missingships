@@ -48,8 +48,9 @@
       #copyright
         copyright 2011-2012 Missing Ships
 
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"}
+    %script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js')
     %script(src='/main.js')
+    =yield :javascript
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-22933797-1']);

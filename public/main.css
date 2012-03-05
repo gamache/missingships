@@ -134,26 +134,11 @@ iframe {
   margin-bottom: 25px;
 }
 
-.tumblr_post {
-  margin: 20px 0px 20px 0px;
-  border-bottom: 1px dotted gray;
-}
-.tumblr_date {
-  text-transform: lowercase;
-  font-style: italic;
-}
-.tumblr_title {
-  font-weight: bold;
-  font-size: 1.4em;
-  margin: 15px 0px 5px 0px;
-}
-.tumblr_description {
 
+.tumblr-post {
+  margin-bottom: 50px;
 }
 
-.tumblr_post img {
-  margin: 0 10px 10px 0px;
-}
 
 .alert {
   color: #711;
